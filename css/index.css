@@ -1,0 +1,161 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #f2f2f2;
+}
+.sidebar{
+  position: auto;
+  float:left;
+  display: inline-block;
+  vertical-align: top;
+  width: 14%;
+  height: 100%;
+  background: #333;  /*#2F4F4F #071914*/
+  box-shadow: 0 0 3px #000;
+}
+.sidebar ul li a{
+  color: #FFFFFF;
+  list-style: none;
+  padding: .5em 1em;
+  cursor: pointer;
+  display: block;
+  clear: both;
+  margin: 10px 0px;
+  text-decoration: none;
+}
+.topnav {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: #333; /*#708090  #190B07*/
+  width: 86%;
+  height: 70px;
+  box-shadow: 1px 0 3px #000;
+}
+
+.topnav h1 {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 2em;
+  margin-left: .8em;
+}
+
+.img-usuario{
+  float: right;
+  margin-right: .7em;
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 40px auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 1.8em;
+	display: block;
+	padding-bottom: .5em;
+	border-top: 1px solid #ccc;
+	margin-top: .5em;
+  padding-top: .5em;
+}
+
+table{
+  width: 100%;
+	margin-bottom : .5em;
+  table-layout: fixed;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+#gerar-relatorio,
+#remover{
+  display: inline-block;
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+.paciente-invalido {
+    background-color: lightcoral;
+}

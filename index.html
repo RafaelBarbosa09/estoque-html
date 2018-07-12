@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+  <aside class="sidebar">
+    <ul>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Compras</a></li>
+      <li><a href="#"><i class="fa fa-shopping-cart"></i>  Vendas</a></li>
+      <li><a href="#">Clientes</a></li>
+      <li><a href="#">Fornecedores</a></li>
+    </ul>
+  </aside>
+  <header class="topnav">
+    <img src="img/usuario.png" alt="Usuario" class="img-usuario">
+    <h1>Produtos</h1>
+
+  </header>
+  <main>
+    <section class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Custo (R$)</th>
+            <th>Venda (R$)</th>
+            <th>Estoque (un)</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-produtos">
+          <tr class="produto">
+            <td class="info-codigo">123777</td>
+            <td class="info-nome">Samsung Galaxy S7</td>
+            <td class="info-custo">900.00</td>
+            <td class="info-venda">1400.00</td>
+            <td class="info-estoque">12</td>
+          </tr>
+
+          <tr class="produto">
+            <td class="info-codigo">123798</td>
+            <td class="info-nome">Samsung Galaxy S8</td>
+            <td class="info-custo">1282.00</td>
+            <td class="info-venda">3200.00</td>
+            <td class="info-estoque">276</td>
+          </tr>
+
+          <tr class="produto">
+            <td class="info-codigo">123785</td>
+            <td class="info-nome">Iphone 9</td>
+            <td class="info-custo">2372.00</td>
+            <td class="info-venda">6000.00</td>
+            <td class="info-estoque">426</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="gerar-relatorio" class="botao bto-principal">Gerar Relatório</button>
+      <button id="remover" class="botao bto-principal">Remover</button>
+      <h2 id="titulo-form">Cadastrar Produto</h2>
+      <form id="form-cadastro">
+          <div class="grupo">
+              <label for="codigo">Código:</label> <!--nome-->
+              <input id="codigo" name="codigo" type="text" placeholder="digite o código do produto" class="campo">
+          </div>
+          <div class="grupo">
+              <label for="produto">Produto:</label> <!--peso-->
+              <input id="produto" name="produto" type="text" placeholder="digite o nome do produto" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+              <label for="custo">Custo (R$):</label> <!--altura-->
+              <input id="custo" name="custo" type="text" placeholder="digite o valor do custo" class="campo campo-medio">
+          </div>
+          <div class="grupo">
+              <label for="venda">Venda (R$):</label> <!--gordura-->
+              <input id="venda" name="gordura" type="text" placeholder="digite o valor de venda desejado" class="campo campo-medio">
+          </div>
+
+          <button id="adicionar-paciente" class="botao bto-principal">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+  <script src="js/calcula-imcs.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
